@@ -108,7 +108,7 @@
       "__version": 2,
       "Flags": 0,
       "Name": "Player Controller",
-      "Position": "0,0,0",
+      "Position": "0.000145301761,0,0",
       "Rotation": "0,0,0,1",
       "Scale": "1,1,1",
       "Tags": "",
@@ -151,6 +151,7 @@
           "OnComponentUpdate": null,
           "OverrideMassCenter": true,
           "RigidbodyFlags": "DisableCollisionSounds",
+          "SleepThreshold": 2,
           "StartAsleep": false
         },
         {
@@ -286,7 +287,7 @@
           "RunSpeed": 320,
           "ShowColliderComponents": false,
           "ShowRigidbodyComponent": false,
-          "ThirdPerson": true,
+          "ThirdPerson": false,
           "ToggleCameraModeButton": "view",
           "UseAnimatorControls": true,
           "UseButton": "use",
@@ -443,7 +444,7 @@
       "Name": "Plane",
       "Position": "0,0,0",
       "Rotation": "0,0,0,1",
-      "Scale": "4,6,1",
+      "Scale": "20,20,1",
       "Tags": "",
       "Enabled": true,
       "NetworkMode": 2,
@@ -841,7 +842,7 @@
                               "FlipVertical": false,
                               "FlipHorizontal": false
                             },
-                            "compiled": null
+                            "compiled": "textures/generated/svgsource/764035df2967839b.vtex"
                           },
                           "BroadcastMessages": []
                         }
@@ -1015,7 +1016,7 @@
                               "FlipVertical": false,
                               "FlipHorizontal": false
                             },
-                            "compiled": null
+                            "compiled": "textures/generated/svgsource/7d3f010fb3b50bec.vtex"
                           },
                           "BroadcastMessages": []
                         }
@@ -1189,7 +1190,7 @@
                               "FlipVertical": false,
                               "FlipHorizontal": false
                             },
-                            "compiled": null
+                            "compiled": "textures/generated/svgsource/7b88cb63547e41c1.vtex"
                           },
                           "BroadcastMessages": []
                         }
@@ -1460,6 +1461,52 @@
           "Children": []
         }
       ]
+    },
+    {
+      "__guid": "1101bb1b-e8df-474c-b6f3-8a5a43841705",
+      "__version": 2,
+      "Flags": 0,
+      "Name": "Cube",
+      "Position": "0,403.038422,14.6180058",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkFlags": 0,
+      "NetworkOrphaned": 0,
+      "NetworkTransmit": true,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "b8879838-7b6c-4199-b5a5-704b5b8c2550",
+          "__enabled": true,
+          "Flags": 0,
+          "BodyGroups": 18446744073709551615,
+          "CreateAttachments": false,
+          "LodOverride": null,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Materials": null,
+          "Model": "models/dev/box.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ],
+      "Children": []
     }
   ],
   "SceneProperties": {
@@ -1482,8 +1529,10 @@
       "CustomBounds": false
     },
     "GameObjectSystems": {
-      "Sandbox.MovieMaker.MovieRecorderSystem": {
-        "DisableClientRecording": false
+      "Sandbox.SelectionSetsSystem": {
+        "Data": {
+          "SelectionSets": []
+        }
       },
       "Sandbox.Clutter.ClutterGridSystem": {
         "Storage": {
